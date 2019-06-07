@@ -1,0 +1,53 @@
+body {
+    color: #fff;
+    text-align: center;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.content div {
+    background: #3bbced;
+    padding: 30px;
+}
+.content div:nth-child(even){
+    background: #777;
+}
+#one nav div {
+    text-align: center;
+    background: #777;
+    padding: 15px;
+    margin: 0 auto;
+    width: 20%;
+}
+#one nav div:hover {
+    background: gray;
+}
+nav ul {
+    display: flex;
+    flex-flow: wrap;
+}
+#one {
+    grid-column: 1 / 8;
+    grid-row: 1 / 4;
+}
+#two {
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
+}
+#three {
+    grid-column: 4 / 8;
+    grid-row: 4 / 6;
+}
+#four {
+    grid-column: 1 / 8;
+    grid-row: 6 / 8;
+}
+#five {
+    grid-column: 1 / 8;
+    grid-row: 8 / 9;
+}
